@@ -89,22 +89,6 @@ def Delete()->None:
             print(f"{deleted_student.strip()} is deleted from the list")
     else:
         print("Invalid index. No student deleted.")
-    # system("cls")
-    # students = "student.txt"
-    
-    # indexId = int(input("Enter index to delete: "))
-    
-    # with open(str(students), "r") as file:   
-    #     content = file.readlines()
-        
-    #     index = 1 # file index pointer
-        
-    #     with open(str(students), "w") as deleteFile:
-    #         for line in content:
-    #             if index != indexId:
-    #                 deleteFile.write(line)
-    #             index += 1
-    #         print(f"{id} is deleted from the list")
 
 def Update()->None:
     system("cls")
