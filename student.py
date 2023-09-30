@@ -58,7 +58,8 @@ def AddName()->None:
         "level: ": level
     }
     
-    students.write(f"{student.get('idno: ')},{student.get('lastname: ')},{student.get('firstname: ')},{student.get('course: ')},{student.get('level: ')}\n")
+    students.write(f"ID NO: {student['idno: ']}\nLASTNAME: {student['lastname: ']}\nFIRSTNAME: {student['firstname: ']}\nCOURSE: {student['course: ']}\nLEVEL: {student['level: ']}\n")
+    students.write("\n")
     students.close()
     
 def FindName()->None:
