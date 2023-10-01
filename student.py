@@ -58,7 +58,7 @@ def AddName()->None:
         "level: ": level
     }
     
-    students.write(f"ID NO: {student['idno: ']}\nLASTNAME: {student['lastname: ']}\nFIRSTNAME: {student['firstname: ']}\nCOURSE: {student['course: ']}\nLEVEL: {student['level: ']}\n")
+    students.write(f"ID NO: {student['idno: ']} -- LASTNAME: {student['lastname: ']} -- FIRSTNAME: {student['firstname: ']} -- COURSE: {student['course: ']} -- LEVEL: {student['level: ']}\n")
     students.write("\n")
     students.close()
     
@@ -105,7 +105,7 @@ def Update()->None:
         course = input("Enter student course: ")
         level = input("Enter student level: ")
 
-        updated_student = f"{idNumber},{lastN},{firstN},{course},{level}\n"
+        updated_student = (f"ID NO: {idNumber} -- LASTNAME: {lastN} -- FIRSTNAME: {firstN} -- COURSE: {course}LEVEL: {level}\n")
         content[StudentId - 1] = updated_student
 
         with open("student.txt", "w") as f:
